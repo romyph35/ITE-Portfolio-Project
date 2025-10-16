@@ -1088,7 +1088,7 @@ nav .nav-links a:hover {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   align-items: start;
 }
@@ -1116,6 +1116,8 @@ nav .nav-links a:hover {
   margin-bottom: 16px;
 }
 
+.form-row > * { min-width: 0; }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -1124,6 +1126,9 @@ nav .nav-links a:hover {
   color: #e2e8f0;
   padding: 12px 14px;
   border-radius: 12px;
+  max-width: 100%;
+  min-width: 0;
+  font-size: 16px;
 }
 
 .contact-form input:focus,
@@ -1152,6 +1157,10 @@ nav .nav-links a:hover {
   background: #22d3ee;
   color: #0b1523;
 }
+
+/* Ensure CTA buttons wrap nicely on small screens */
+.cta-buttons { flex-wrap: wrap; }
+.cta-buttons .cta-btn { min-width: 180px; }
 
 .footer {
   background: #0f172a;
