@@ -1297,7 +1297,7 @@ nav .nav-links a:hover {
   
   .nav-links {
     position: fixed;
-    top: 100px;
+    top: 90px ;
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
@@ -1521,7 +1521,6 @@ section { scroll-margin-top: 90px; }
 @media (max-width: 768px) {
   :root { --nav-offset: 64px; }
   .nav-links {
-    top: var(--nav-offset);
     height: calc(100vh - var(--nav-offset));
     height: calc(100dvh - var(--nav-offset));
   }
