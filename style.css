@@ -1297,7 +1297,7 @@ nav .nav-links a:hover {
   
   .nav-links {
     position: fixed;
-    top: 120px;
+    top: 100px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
