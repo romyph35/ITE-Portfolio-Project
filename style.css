@@ -411,22 +411,6 @@ nav .nav-links a:hover {
   background: #0f1b2f;
 }
 
-.skills > .container,
-.experience > .container,
-.contact > .container {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.04);
-  padding: 40px 32px;
-}
-
-.skills h2,
-.experience h2,
-.contact h2 {
-  text-align: center;
-}
-
 .skills h2 span,
 .experience h2 span,
 .contact h2 span { color: inherit; }
