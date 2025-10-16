@@ -1507,3 +1507,27 @@ nav .nav-links a:hover {
   transform: translateY(0) scale(1);
   filter: blur(0);
 }
+:root { --accent-color: #22d3ee; --nav-offset: 72px; }
+html, body { overflow-x: hidden; -webkit-text-size-adjust: 100%; }
+img, svg, video { max-width: 100%; height: auto; }
+section { scroll-margin-top: 90px; }
+.hero-text { min-width: 0; }
+.portrait { width: clamp(200px, 45vw, 360px); height: auto; aspect-ratio: 6 / 7; }
+.timeline { overflow-x: hidden; }
+@media (max-width: 1024px) {
+  :root { --nav-offset: 72px; }
+  .portrait { width: clamp(220px, 40vw, 300px); }
+}
+@media (max-width: 768px) {
+  :root { --nav-offset: 64px; }
+  .nav-links {
+    top: var(--nav-offset);
+    height: calc(100vh - var(--nav-offset));
+    height: calc(100dvh - var(--nav-offset));
+  }
+  .portrait { width: clamp(200px, 60vw, 250px); }
+}
+@media (max-width: 480px) {
+  :root { --nav-offset: 60px; }
+  .portrait { width: clamp(180px, 65vw, 200px); }
+}
