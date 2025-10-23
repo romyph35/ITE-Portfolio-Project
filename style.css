@@ -1514,14 +1514,12 @@ section { scroll-margin-top: 90px; }
   .portrait { width: clamp(220px, 40vw, 300px); }
 }
 @media (max-width: 768px) {
-  :root { --nav-offset: 64px; }
   .nav-links {
-    height: calc(100vh - var(--nav-offset));
-    height: calc(100dvh - var(--nav-offset));
+    height: calc(100vh - 64px);
+    height: calc(100dvh - 64px);
   }
   .portrait { width: clamp(200px, 60vw, 250px); }
 }
 @media (max-width: 480px) {
-  :root { --nav-offset: 60px; }
   .portrait { width: clamp(180px, 65vw, 200px); }
 }
